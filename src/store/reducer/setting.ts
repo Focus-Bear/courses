@@ -5,7 +5,7 @@ import { DEFAULT_COURSE_PAGE, USER_TAB } from 'constants/general';
 import { SettingSliceType } from 'constants/interface';
 
 const initialState: SettingSliceType = {
-  currentTab: USER_TAB.WHAT_TO_LEARN_NEXT.tabIndex,
+  currentTab: USER_TAB.MY_COURSES.tabIndex,
   currentPage: DEFAULT_COURSE_PAGE,
   confirmModal: DEFAULT_CONFIRM_MODEL,
   currentLanguage: Language.EN,
