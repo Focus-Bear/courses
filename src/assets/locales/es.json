@@ -10,7 +10,9 @@
       "back_to_enrolled_courses": "Volver a los cursos inscritos",
       "youve_completed_the_course": "Has completado el curso",
       "we_could_not_find_any_courses": "No pudimos encontrar ningún curso. Gracias por tu paciencia.",
-      "platform": "NEEDSTRANSLATION Platform"
+      "platform": "NEEDSTRANSLATION Platform",
+      "you_have_not_created_any_course_yet": "NEEDSTRANSLATION You've not created any course yet.",
+      "no_remaining_courses_to_enroll_in": "NEEDSTRANSLATION No remaining courses to enroll in. Please check your Enrolled Courses."
     },
     "lesson": {
       "new_lesson": "Nueva Lección",

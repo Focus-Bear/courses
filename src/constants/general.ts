@@ -6,9 +6,9 @@ export const ADMIN_TAB = {
 };
 
 export const USER_TAB = {
-  WHAT_TO_LEARN_NEXT: { title: 'tabs.what_to_learn_next', tabIndex: 0 },
+  MY_COURSES: { title: 'tabs.my_courses', tabIndex: 0 },
   ENROLLED_COURSES: { title: 'tabs.enrolled_courses', tabIndex: 1 },
-  MY_COURSES: { title: 'tabs.my_courses', tabIndex: 2 },
+  WHAT_TO_LEARN_NEXT: { title: 'tabs.what_to_learn_next', tabIndex: 2 },
 };
 
 export const API_TAG = {

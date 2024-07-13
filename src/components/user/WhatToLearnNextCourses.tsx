@@ -30,7 +30,7 @@ const WhatToLearnNextCourses = () => {
       {showCourseHighlights && <CourseHighlights />}
     </CoursesContentWrapper>
   ) : (
-    <EmptyItems message={t('course.we_could_not_find_any_courses')} />
+    <EmptyItems message={t('course.no_remaining_courses_to_enroll_in')} />
   );
 };
 
