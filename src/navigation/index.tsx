@@ -26,8 +26,8 @@ function Navigation() {
   useEffect(() => {
     if (!isAuthLoading) {
       isAuthenticated ? saveTokenToLocalStorage() : navigate(ROUTES.LOGIN);
-      setIsCheckingPreConditions(false);
     }
+    setIsCheckingPreConditions(false || isAuthLoading);
   }, [isAuthenticated, isAuthLoading]);
 
   useEffect(() => {
@@ -41,13 +41,15 @@ function Navigation() {
     const token = await getAccessTokenSilently();
     if (token) {
       window.localStorage.setItem(TOKEN_NAME, token);
-      auth0User?.[TOKEN_ROLES_KEY].includes(USER_ROLES.ADMIN) &&
+      if (auth0User?.[TOKEN_ROLES_KEY].includes(USER_ROLES.ADMIN)) {
         dispatch(updateIsAdmin(true));
-      navigate(ROUTES.HOME);
+        navigate(ROUTES.ADMIN);
+      } else {
+        navigate(ROUTES.DASHBOARD);
+      }
     } else {
       navigate(ROUTES.LOGIN);
     }
-    setIsCheckingPreConditions(false);
   };
 
   return (
